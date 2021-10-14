@@ -1,0 +1,158 @@
+/**********************************
+*
+* Author: Sandra Suarez AKA
+*		  XandCoder
+* Date: 10.14.21
+* FCC Technical Documentation Page
+*
+**********************************/
+
+body {
+	/* Makes  body non-scrollable */
+	overflow:  hidden;
+	height: 100vh;
+	margin: 0px;
+	font-family: sans-serif;
+	color: #00284A;
+	background-color: #FFFFFF;
+	font-size: 1em;
+	min-width: 382px;
+}
+
+main {
+	/* Adds scollbar back to the main element */
+	overflow-y: auto;
+	padding: 20px;	
+}
+
+
+/* Navigation styles */
+nav  {
+	flex: 1 0 20%;
+	background-color: #00284A;
+	color: #FFFFFF;
+	font-weight: bold;
+	min-width: 22%;
+}
+
+.wrapper  {
+	/* Makes this class a flex container */
+	display:flex;
+	/* Height is equal to parent */
+	height: 100%;
+}
+
+nav header {
+	padding: 10px 0px 5px 10px;
+	font-weight: bold;
+}
+
+nav ul  {
+	list-style-type: none;
+}
+
+.nav-link {
+	text-decoration: none;
+}
+.nav-link:link  {
+	color: #FFFFFF;
+}
+.nav-link:visited  {
+	color: #FFFFFF;
+}
+.nav-link:hover  {
+	color: #00A94F;
+	font-weight: bold;
+}
+
+
+/* Main Document styles */
+.main-section header{
+	font-weight: bold;
+	font-size: 2.1875em;
+	margin-bottom: 10px;
+	padding-top: 18px;
+	text-transform: uppercase;
+}
+
+
+/* Code styles */
+code{
+	background-color: #FFCC00; 
+	font-size: .90em;
+	padding: 7px 10px;
+	border: none;
+	text-align: center;
+	text-decoration:  none;	
+}
+
+
+/* Submit Button styles */
+.submitclaim{
+	font-size: .90em;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	color: #00A94F;
+	padding: 5px;
+	border-radius: 25px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #00A94F;
+}
+.submitclaim:hover{
+	color:	#FFFFFF;
+	background-color: red;
+	border-color: red;
+}
+
+
+
+/* Website and Email links styels */
+.weblink:link, .submitemail:link {
+	font-style: italic;
+	color: #00284A;
+}
+.weblink:visited, .submitemail:visited {
+	color: #00284A;
+}
+.weblink:hover, .submitemail:hover {
+	color:	#00A94F;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Fooetr styles */
+footer{	
+	text-align: right;
+	margin-right: 20px;
+	font-size: 0.8em;
+}
+
+
+
+
+/***** MOBILE Media Query *****/
+@media (max-width: 700px)  {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	nav {
+		overflow: auto;
+	}
+	nav ul  {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin: 0px;
+		overflow: auto;
+	}
+
+
+	.main-section header {
+		font-size: 1.56em;
+		padding-top: 10px;
+	}
+
+}
