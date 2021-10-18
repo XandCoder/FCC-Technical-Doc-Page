@@ -32,8 +32,6 @@ nav  {
 	background-color: #00284A;
 	color: #FFFFFF;
 	font-weight: bold;
-	min-width: 22%;
-	max-width: 25%;
 }
 
 .wrapper  {
@@ -134,7 +132,7 @@ footer{
 
 
 /***** MOBILE Media Query *****/
-@media (max-width: 700px)  {
+@media (max-width: 800px)  {
 	.wrapper {
 		flex-direction: column;
 	}
