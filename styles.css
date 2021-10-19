@@ -28,10 +28,10 @@ main {
 
 /* Navigation styles */
 nav  {
-	flex: 1 0 12%;
+	flex: 1 0 20%;
 	background-color: #00284A;
 	color: #FFFFFF;
-	/*max-width: 25%;*/
+	max-width: 20%;
 }
 
 .wrapper  {
@@ -50,6 +50,10 @@ nav ul  {
 	list-style-type: none;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+nav ul li{
+	padding-bottom: 10px;
 }
 
 .nav-link {
