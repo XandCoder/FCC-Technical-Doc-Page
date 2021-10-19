@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 10.14.21
+* Date: 10.19.21
 * FCC Technical Documentation Page
 *
 **********************************/
@@ -28,10 +28,10 @@ main {
 
 /* Navigation styles */
 nav  {
-	flex: 1 0 20%;
+	flex: 1 0 12%;
 	background-color: #00284A;
 	color: #FFFFFF;
-	font-weight: bold;
+	/*max-width: 25%;*/
 }
 
 .wrapper  {
@@ -48,6 +48,8 @@ nav header {
 
 nav ul  {
 	list-style-type: none;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav-link {
@@ -132,13 +134,14 @@ footer{
 
 
 /***** MOBILE Media Query *****/
-@media (max-width: 800px)  {
+@media (max-width: 900px)  {
 	.wrapper {
 		flex-direction: column;
 	}
 
 	nav {
 		overflow: auto;
+		max-width: 100%;
 	}
 	nav ul  {
 		display: flex;
