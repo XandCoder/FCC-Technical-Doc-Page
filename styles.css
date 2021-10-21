@@ -21,10 +21,11 @@ body {
 
 main {
 	/* Adds scollbar back to the main element */
-	overflow-y: auto;
-	padding: 20px;
+	overflow-y: scroll;
+	padding-left: 20px;
 	flex: 1 0 80%;	
 }
+
 
 
 /* Navigation styles */
@@ -72,14 +73,14 @@ nav ul li{
 }
 
 
+
 /* Main Document styles */
 .main-section header{
 	font-weight: bold;
-	font-size: 2.1875em;
-	margin-bottom: 10px;
-	padding-top: 18px;
+	font-size: 1.8em;
 	text-transform: uppercase;
 }
+
 
 
 /* Code styles */
@@ -91,6 +92,7 @@ code{
 	text-align: center;
 	text-decoration:  none;	
 }
+
 
 
 /* Submit Button styles */
@@ -128,6 +130,8 @@ code{
 	text-decoration: none;
 }
 
+
+
 /* Fooetr styles */
 footer{	
 	text-align: right;
@@ -137,13 +141,11 @@ footer{
 
 
 
-
-/***** MOBILE Media Query *****/
-@media (max-width: 900px)  {
+/* MOBILE Media Query */
+@media screen and (max-width: 900px)  {
 	.wrapper {
 		flex-direction: column;
 	}
-
 	#navbar {
 		overflow: auto;
 		max-width: 100%;
@@ -155,11 +157,4 @@ footer{
 		margin: 0px;
 		overflow: auto;
 	}
-
-
-	.main-section header {
-		font-size: 1.56em;
-		padding-top: 10px;
-	}
-
 }
