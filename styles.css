@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 10.14.21
+* Date: 10.19.21
 * FCC Technical Documentation Page
 *
 **********************************/
@@ -21,9 +21,11 @@ body {
 
 main {
 	/* Adds scollbar back to the main element */
-	overflow-y: auto;
-	padding: 20px;	
+	overflow-y: scroll;
+	padding-left: 20px;
+	flex: 1 0 80%;	
 }
+
 
 
 /* Navigation styles */
@@ -31,8 +33,7 @@ nav  {
 	flex: 1 0 20%;
 	background-color: #00284A;
 	color: #FFFFFF;
-	font-weight: bold;
-	min-width: 22%;
+	max-width: 20%;
 }
 
 .wrapper  {
@@ -49,6 +50,12 @@ nav header {
 
 nav ul  {
 	list-style-type: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav ul li{
+	padding-bottom: 10px;
 }
 
 .nav-link {
@@ -66,14 +73,14 @@ nav ul  {
 }
 
 
+
 /* Main Document styles */
 .main-section header{
 	font-weight: bold;
-	font-size: 2.1875em;
-	margin-bottom: 10px;
-	padding-top: 18px;
+	font-size: 1.8em;
 	text-transform: uppercase;
 }
+
 
 
 /* Code styles */
@@ -85,6 +92,7 @@ code{
 	text-align: center;
 	text-decoration:  none;	
 }
+
 
 
 /* Submit Button styles */
@@ -122,6 +130,8 @@ code{
 	text-decoration: none;
 }
 
+
+
 /* Fooetr styles */
 footer{	
 	text-align: right;
@@ -131,15 +141,14 @@ footer{
 
 
 
-
-/***** MOBILE Media Query *****/
-@media (max-width: 700px)  {
+/* MOBILE Media Query */
+@media screen and (max-width: 900px)  {
 	.wrapper {
 		flex-direction: column;
 	}
-
-	nav {
+	#navbar {
 		overflow: auto;
+		max-width: 100%;
 	}
 	nav ul  {
 		display: flex;
@@ -148,11 +157,4 @@ footer{
 		margin: 0px;
 		overflow: auto;
 	}
-
-
-	.main-section header {
-		font-size: 1.56em;
-		padding-top: 10px;
-	}
-
 }
